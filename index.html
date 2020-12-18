@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Cursor Hover Effects</title>   
+    </head>
+    <body>
+        <ul>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-podcast" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+            <div class="cursor"></div>
+        </ul>
+        <script>
+            const cusrsor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', (e) => {
+                cusrsor.style.left = e.pageX + 'px';
+                cusrsor.style.top = e.pageY + 'px';
+            })
+        </script>
+    </body>
+</html>
